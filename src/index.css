@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Dark Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Dark Portfolio Theme */
+    --background: 222 47% 7%;           /* Deep navy */
+    --foreground: 0 0% 98%;             /* Pure white */
+
+    --card: 222 47% 9%;                 /* Slightly lighter navy */
+    --card-foreground: 0 0% 95%;        /* Off-white */
+
+    --popover: 222 47% 9%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 14 100% 66%;             /* Vibrant orange */
+    --primary-foreground: 0 0% 98%;     /* White */
+
+    --secondary: 222 47% 12%;           /* Medium navy */
+    --secondary-foreground: 0 0% 90%;   /* Light gray */
+
+    --muted: 222 47% 12%;
+    --muted-foreground: 0 0% 65%;       /* Medium gray */
+
+    --accent: 14 100% 66%;              /* Orange accent */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 222 47% 15%;              /* Subtle border */
+    --input: 222 47% 15%;
+    --ring: 14 100% 66%;                /* Orange ring */
+
+    --radius: 0.75rem;
+
+    /* Custom Portfolio Colors */
+    --hero-accent: 14 100% 66%;         /* Orange circle */
+    --tech-stack: 222 47% 15%;          /* Tech icons bg */
+    --stats-highlight: 14 100% 66%;     /* Stats numbers */
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 7%), hsl(222 47% 10%));
+    --gradient-accent: linear-gradient(135deg, hsl(14 100% 66%), hsl(14 100% 70%));
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 9%), hsl(222 47% 12%));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(222 47% 4% / 0.3);
+    --shadow-accent: 0 8px 30px -6px hsl(14 100% 66% / 0.3);
+    --shadow-glow: 0 0 40px hsl(14 100% 66% / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme inherits same values - always dark */
+    --background: 222 47% 7%;
+    --foreground: 0 0% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted));
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary));
+  }
+}
+
+@layer components {
+  /* Hero gradient background */
+  .hero-bg {
+    background: var(--gradient-hero);
+  }
+  
+  /* Accent gradient */
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  /* Card gradient */
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  /* Glow effects */
+  .glow-accent {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  
+  /* Text gradients */
+  .text-gradient-accent {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(14 100% 70%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Hover effects */
+  .hover-glow:hover {
+    box-shadow: var(--shadow-accent);
+    transform: translateY(-2px);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+}
