@@ -7,8 +7,18 @@ import project3Image from '@/assets/project-3.jpg';
 
 const ProjectsSection = () => {
   const projects = [
-    {
+     {
       id: 1,
+      title: 'E-commerce Platform',
+      description:
+        'Scalable e-commerce solution with payment integration, admin dashboard, and inventory management system.',
+      image: project2Image,
+      technologies: ['Next.js', 'Stripe', '', 'Tailwind'],
+      liveUrl: 'https://danyal-kid-store.vercel.app/',
+      githubUrl: 'https://github.com/DanyalSarwar325/danyal_kidStore',
+    },
+    {
+      id: 2,
       title: 'HealthCare Appointment System',
       description:
         'A full-stack web application built with NextJs. Features real-time updates, authentication, and responsive design.',
@@ -17,16 +27,7 @@ const ProjectsSection = () => {
       liveUrl: 'https://health-care-appointment-system-jne5.vercel.app/',
       githubUrl: 'https://github.com/DanyalSarwar325/HealthCare_Appointment_System',
     },
-    {
-      id: 2,
-      title: 'E-commerce Platform',
-      description:
-        'Scalable e-commerce solution with payment integration, admin dashboard, and inventory management system.',
-      image: project2Image,
-      technologies: ['Next.js', 'Stripe', 'PostgreSQL', 'Tailwind'],
-      liveUrl: '#',
-      githubUrl: '#',
-    },
+   
     {
       id: 3,
       title: 'Task Management App',
