@@ -12,14 +12,13 @@ It showcases my skills, projects, and experience as a **Software Developer** spe
 ## 📌 Features
 
 - 🎨 **Modern UI/UX** – Clean and minimal design with animations  
-- ⚡ **Next.js 14 App Router** – Optimized routing and server components  
 - 📱 **Responsive Design** – Fully mobile, tablet, and desktop friendly  
 - 🖼️ **Hero Section** – Introduction with profile image & CTA buttons  
 - 🛠️ **Tech Stack Section** – Highlights tools and technologies I use  
 - 📂 **Projects Section** – Showcases my work with live links  
 - 📞 **Contact Section** – Easy way to reach out  
 - 🔔 **Toast Notifications** – Feedback for user actions  
-- 🌙 **Dark/Light Mode Ready** (if enabled)  
+
 
 ---
 
