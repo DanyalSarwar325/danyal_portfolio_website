@@ -4,6 +4,9 @@ A modern, responsive portfolio website built with **Next.js 14**, **Tailwind CSS
 It showcases my skills, projects, and experience as a **Software Developer** specializing in **MERN Stack, Next.js, and Full-Stack Development**.  
 
 ---
+# 🚀 To run code
+1.npm i
+2.npm run dev
 
 ## 📌 Features
 
