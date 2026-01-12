@@ -5,8 +5,9 @@ It showcases my skills, projects, and experience as a **Software Developer** spe
 
 ---
 # 🚀 To run code
--1.npm i
--2.npm run dev
+-**1.npm i
+-**2.npm run dev
+---
 
 ## 📌 Features
 
