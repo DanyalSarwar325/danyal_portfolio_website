@@ -47,7 +47,7 @@ const HeroSection = () => {
                 <Mail className="mr-2 h-5 w-5" />
                 Got a project?
               </Button>
-              <Button
+              {/* <Button
                 asChild
                 variant="outline"
                 size="lg"
@@ -57,7 +57,7 @@ const HeroSection = () => {
                   <Download className="mr-2 h-5 w-5" />
                   My Resume
                 </a>
-              </Button>
+              </Button> */}
             </div>
           </div>
 

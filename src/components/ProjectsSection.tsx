@@ -5,15 +5,26 @@ import project1Image from '@/assets/project-1.jpg';
 import project2Image from '@/assets/project-2.jpg';
 import project3Image from '@/assets/project-3.jpg';
 
+
 const ProjectsSection = () => {
   const projects = [
      {
       id: 1,
+      title: 'RetailFlow-Garments Tracking System',
+      description:
+        'Built full-stack garment manufacturing ERP using Next.js 14, TypeScript, MongoDB, and Tailwind CSS. Implemented multi-department workflow tracking with barcode generation and inventory management. Developed automated payroll system with job costing and business reporting dashboards.',
+      image: '/Proj_img.png',
+      technologies: ['Next Js', 'MongoDB', 'Tailwind CSS'],
+      liveUrl: 'https://clothing-retail-system-rrbm.vercel.app/',
+      githubUrl: '#',
+    },
+    {
+      id: 3,
       title: 'E-commerce Platform',
       description:
         'Scalable e-commerce solution with payment integration, admin dashboard, and inventory management system.',
       image: project2Image,
-      technologies: ['Next.js', 'Stripe', '', 'Tailwind'],
+      technologies: ['Next.js', 'Stripe', 'Tailwind'],
       liveUrl: 'https://danyal-kid-store.vercel.app/',
       githubUrl: 'https://github.com/DanyalSarwar325/danyal_kidStore',
     },
@@ -29,22 +40,23 @@ const ProjectsSection = () => {
     },
    
     {
-      id: 3,
+      id: 5,
       title: 'Task Management App',
       description:
         'Mobile-first productivity application with team collaboration features, analytics dashboard, and offline support.',
-      image: project3Image,
-      technologies: ['HTML', 'CSS', 'JavaScript', ],
+      image: project1Image,
+      technologies: ['HTML', 'CSS', 'JavaScript'],
       liveUrl: 'https://task-tracking-eight.vercel.app/',
       githubUrl: '#',
     },
-     {
+   
+    {
       id: 4,
       title: 'Events Gallery',
       description:
         'A web application to showcase events with features like RSVP, event details, and user authentication.',
       image: project3Image,
-      technologies: ['HTML', 'CSS', 'JavaScript' ,'React', ],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
       liveUrl: 'https://career-dynamics-case-study.vercel.app/',
       githubUrl: '#',
     },
