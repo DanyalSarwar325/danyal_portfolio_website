@@ -17,6 +17,16 @@ const ProjectsSection = () => {
       liveUrl: 'https://clothing-retail-system-rrbm.vercel.app/',
       githubUrl: '#',
     },
+     {
+      id: 6,
+      title: 'AI Commerce ',
+      description:
+        'An Urdu Based E-commerce Platform for Homebased Sellers.',
+      image: ImageCommefce,
+      technologies: ['Python', 'FastAPI', 'Langchain', 'NextJs', 'MongoDB'],
+      liveUrl: '#',
+      githubUrl: '#',
+    },
     {
       id: 3,
       title: 'E-commerce Platform',
@@ -59,16 +69,7 @@ const ProjectsSection = () => {
       liveUrl: 'https://career-dynamics-case-study.vercel.app/',
       githubUrl: '#',
     },
-    {
-      id: 6,
-      title: 'AI Commerce ',
-      description:
-        'An Urdu Based E-commerce Platform for Homebased Sellers.',
-      image: ImageCommefce,
-      technologies: ['Python', 'FastAPI', 'Langchain', 'NextJs', 'MongoDB'],
-      liveUrl: '#',
-      githubUrl: '#',
-    },
+   
   ];
 
   return (
