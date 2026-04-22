@@ -16,15 +16,15 @@ const Index = () => {
       </main>
       
       {/* Footer */}
-      <footer className="bg-card border-t border-border py-12">
+      <footer className="hero-bg border-t border-white/20 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-bold text-foreground">Danyal Sarwar</h3>
-              <p className="text-muted-foreground">Software Developer</p>
+              <h3 className="text-xl font-bold text-white">Danyal Sarwar</h3>
+              <p className="text-blue-100">Software Developer</p>
             </div>
-            <div className="text-muted-foreground text-center md:text-right">
-              <p>&copy; 2025 Danyal Sarwar. All rights reserved.</p>
+            <div className="text-blue-100 text-center md:text-right">
+              <p>&copy; 2026 Danyal Sarwar. All rights reserved.</p>
              
             </div>
           </div>
