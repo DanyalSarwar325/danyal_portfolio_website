@@ -21,7 +21,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -31,16 +31,25 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-center space-x-5">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-muted-foreground hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm font-medium hover:bg-secondary/50"
+                  className="text-muted-foreground hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm font-semibold hover:bg-secondary/70"
                 >
                   {item.label}
                 </button>
               ))}
+              <Button
+                asChild
+                size="sm"
+                className="ml-3 px-4"
+              >
+                <a href="/my_resume.pdf" target="_blank" rel="noopener noreferrer">
+                  Download CV
+                </a>
+              </Button>
             </div>
           </div>
 

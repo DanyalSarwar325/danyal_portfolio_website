@@ -12,6 +12,11 @@ const AboutSection = () => {
       icon: Code,
       title: 'Machine Learning',
       description: 'Building intelligent applications using machine learning algorithms and data analysis.',
+    },
+      {
+      icon: Globe,
+      title: 'AI Integration',
+      description: 'Developing Custom AI based Solution',
     }
     // {
     //   icon: Server,
@@ -32,7 +37,7 @@ const AboutSection = () => {
       icon: Users,
     },
     {
-      number: '2+',
+      number: '1+',
       label: 'Years of Experience',
       icon: Calendar,
     },

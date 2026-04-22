@@ -1,86 +1,77 @@
-import { Download, Mail } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TechStack from "./TechStack";
-import profileImage from "@/assets/profile-hero.jpg";
+import profileImage from "/me.png";
 
 const HeroSection = () => {
   return (
-    <section
-      id="home"
-      className="min-h-screen hero-bg flex items-center relative overflow-hidden"
-    >
-      {/* Background decorative elements */}
-      <div className="absolute top-20 right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-glow-pulse"></div>
-      <div className="absolute bottom-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-2xl"></div>
+    <section id="home" className="min-h-screen pt-24 pb-16 relative overflow-hidden">
+      <div className="absolute -top-20 -left-24 h-64 w-64 rounded-full bg-primary/10 blur-3xl"></div>
+      <div className="absolute bottom-10 right-0 h-72 w-72 rounded-full bg-accent/15 blur-3xl"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Text Content */}
-          <div className="space-y-8 animate-fade-in">
-            <div className="space-y-4">
-              <p className="text-lg text-primary font-medium">Hello.</p>
-              <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-tight">
-                I'm Danyal Sarwar
-              </h1>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gradient-accent bg-gradient-to-r from-primary to-primary/70 bg-clip-text">
-                Software Developer
-              </h2>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="hero-bg rounded-[2rem] shadow-2xl border border-primary/20 overflow-hidden">
+          <div className="grid lg:grid-cols-2 gap-10 items-center px-8 py-12 sm:px-12 sm:py-14 lg:px-16 lg:py-16">
+            <div className="space-y-8 animate-fade-in text-white">
+              {/* <div className="inline-flex items-center rounded-full bg-white/15 px-4 py-1 text-sm font-medium tracking-wide">
+                Welcome to my portfolio
+              </div> */}
+
+              <div className="space-y-4">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                  I am Danyal 
+                  <span className="mt-2 block text-2xl sm:text-3xl lg:text-4xl font-semibold text-blue-100">
+                    Software Developer
+                  </span>
+                </h1>
+                <p className="text-sm sm:text-base text-blue-50/90 max-w-xl leading-relaxed">
+                  Building scalable web experiences that turn ideas into impactful digital products.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  size="lg"
+                  className="bg-white text-primary hover:bg-blue-50 px-8 py-6 text-base font-semibold"
+                  onClick={() =>
+                    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  <Mail className="mr-2 h-5 w-5" />
+                  Start a project
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="lg"
+                  className="border-white/60 text-white hover:bg-white/10 hover:text-white px-8 py-6 text-base font-semibold"
+                >
+                  <a href="#projects">
+                    Explore Projects
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
+                </Button>
+              </div>
             </div>
 
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-              I create innovative digital solutions with clean code and modern
-              design. Specializing in full-stack development and user
-              experience.
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="gradient-accent hover-glow transition-smooth px-8 py-6 text-lg font-semibold"
-                onClick={() =>
-                  document
-                    .getElementById("contact")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                Got a project?
-              </Button>
-              {/* <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth px-8 py-6 text-lg font-semibold"
-              >
-                <a href="/my_resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <Download className="mr-2 h-5 w-5" />
-                  My Resume
-                </a>
-              </Button> */}
-            </div>
-          </div>
-
-          {/* Right Column - Profile Image */}
-          <div className="relative flex justify-center animate-slide-in-up">
-            {/* Orange accent circle */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-r from-primary to-primary/70 opacity-20 animate-glow-pulse"></div>
-            </div>
-
-            {/* Profile image */}
-            <div className="relative z-10 w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
-              <img
-                src="/me.png"
-                alt="Jensen Omega - Software Developer"
-                className="w-full h-full object-cover"
-              />
+            <div className="relative flex justify-center lg:justify-end animate-slide-in-up">
+              <div className="absolute h-72 w-72 sm:h-80 sm:w-80 rounded-full bg-white/20 blur-2xl"></div>
+              <div className="relative w-72 h-80 sm:w-80 sm:h-96 rounded-3xl bg-white/95 p-2 shadow-2xl border border-white/70">
+                <div className="w-full h-full rounded-[1.25rem] overflow-hidden bg-secondary">
+                  <img
+                    src={profileImage}
+                    alt="Danyal Sarwar - Software Developer"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
             </div>
           </div>
+
+          <div className="h-12 sm:h-14 bg-white/95 [clip-path:ellipse(75%_100%_at_50%_0%)]"></div>
         </div>
 
-        {/* Tech Stack */}
-        <div className="mt-20">
+        <div className="mt-14">
           <TechStack />
         </div>
       </div>

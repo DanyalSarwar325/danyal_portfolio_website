@@ -63,34 +63,36 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-background">
+    <section id="projects" className="py-20 hero-bg relative overflow-hidden">
+      <div className="absolute -top-16 -left-16 h-56 w-56 rounded-full bg-white/10 blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-accent/20 blur-3xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+        <div className="relative z-10 text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             Featured Projects
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <div className="w-20 h-1 bg-white/80 mx-auto mb-6"></div>
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             A showcase of my recent work, featuring modern applications built with cutting-edge
             technologies and best practices.
           </p>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="relative z-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card
               key={project.id}
-              className="gradient-card border-border hover:border-primary/30 transition-smooth group overflow-hidden animate-slide-in-up"
+              className="gradient-card border border-primary/40 hover:border-primary transition-smooth group overflow-hidden animate-slide-in-up"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Project Image */}
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden p-3 pb-0">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-smooth group-hover:scale-105"
+                  className="w-full h-48 object-cover rounded-xl transition-smooth group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-smooth"></div>
 
@@ -131,7 +133,7 @@ const ProjectsSection = () => {
                 <CardTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-smooth">
                   {project.title}
                 </CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardDescription className="text-muted-foreground line-clamp-3">
                   {project.description}
                 </CardDescription>
               </CardHeader>
@@ -142,7 +144,7 @@ const ProjectsSection = () => {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full border border-border"
+                      className="px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full border border-primary/40"
                     >
                       {tech}
                     </span>
@@ -193,11 +195,11 @@ const ProjectsSection = () => {
         </div>
 
         {/* View More Projects */}
-        <div className="text-center mt-12">
+        <div className="relative z-10 text-center mt-12">
           <Button
             variant="outline"
             size="lg"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg"
+            className="border-white/70 text-white hover:bg-white hover:text-primary px-8 py-4 text-lg"
           >
             View All Projects
           </Button>
