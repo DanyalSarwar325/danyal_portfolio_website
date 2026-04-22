@@ -4,8 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import project1Image from '@/assets/project-1.jpg';
 import project2Image from '@/assets/project-2.jpg';
 import project3Image from '@/assets/project-3.jpg';
-
-
+import ImageCommefce from '@/assets/AICommerce.jpeg';
 const ProjectsSection = () => {
   const projects = [
      {
@@ -58,6 +57,16 @@ const ProjectsSection = () => {
       image: project3Image,
       technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
       liveUrl: 'https://career-dynamics-case-study.vercel.app/',
+      githubUrl: '#',
+    },
+    {
+      id: 6,
+      title: 'AI Commerce ',
+      description:
+        'An Urdu Based E-commerce Platform for Homebased Sellers.',
+      image: ImageCommefce,
+      technologies: ['Python', 'FastAPI', 'Langchain', 'NextJs', 'MongoDB'],
+      liveUrl: '#',
       githubUrl: '#',
     },
   ];
