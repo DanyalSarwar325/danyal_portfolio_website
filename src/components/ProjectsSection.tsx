@@ -24,7 +24,7 @@ const ProjectsSection = () => {
         'An Urdu Based E-commerce Platform for Homebased Sellers.',
       image: ImageCommefce,
       technologies: ['Python', 'FastAPI', 'Langchain', 'NextJs', 'MongoDB'],
-      liveUrl: '#',
+      liveUrl: 'https://ai-commerce-frontend-ten.vercel.app',
       githubUrl: '#',
     },
     {
