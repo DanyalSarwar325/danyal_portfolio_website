@@ -48,16 +48,7 @@ const ProjectsSection = () => {
       githubUrl: 'https://github.com/DanyalSarwar325/HealthCare_Appointment_System',
     },
    
-    {
-      id: 5,
-      title: 'Task Management App',
-      description:
-        'Mobile-first productivity application with team collaboration features, analytics dashboard, and offline support.',
-      image: project1Image,
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveUrl: 'https://task-tracking-eight.vercel.app/',
-      githubUrl: '#',
-    },
+    
    
     {
       id: 4,
